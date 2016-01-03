@@ -1,6 +1,5 @@
 var path = require('path');
 var sass = require('node-sass');
-var eyeglass = require('eyeglass');
 
 modules = [ 'singularitygs', 'breakpoint-sass', 'sass-toolkit' ];
 
@@ -13,15 +12,7 @@ var options = {
 
 console.log(options);
 
-options.eyeglass = {
-  engines: {
-    sass: sass
-  },
-  
-  buildDir: path.join(__dirname, 'dist'),
-}
-
 // Standard node-sass rendering of a single file.
-sass.render(eyeglass(options), function(err, result) {
+sass.render(options, function(err, result) {
     console.log(err, result);
 });
