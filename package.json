@@ -1,0 +1,25 @@
+{
+  "name": "singularity-project-bug-1289",
+  "version": "1.0.0",
+  "description": "A simple test case for the node-sass bug",
+  "readme": "This is a test case",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saper/singularity-project-bug-1289"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "sass"
+  ],
+  "author": "Marcin Cieślak <saper@saper.info>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "breakpoint-sass": "^2.6.1",
+    "eyeglass": "^0.8.0",
+    "sass-toolkit": "^2.9.0",
+    "singularitygs": "^1.6.2"
+  }
+}

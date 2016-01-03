@@ -1,0 +1,22 @@
+// ----
+// libsass (v3.2.5)
+// ----
+
+@import "breakpoint";
+@import "toolkit";
+@import "singularitygs";
+
+@include sgs-change('debug', true);
+@include sgs-change('mobile first', true);
+@include sgs-change('output', 'isolation');
+
+@include add-grid(8);
+@include add-gutter(0);
+
+.container {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  @include background-grid($color: #CCF);
+}
